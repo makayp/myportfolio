@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+main {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body,
+.socials,
+.footer {
+  display: flex;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(to bottom right, #121f38 50%, #100945);
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  display: inline-flex;
+  width: 100%;
+}
+
+#logo,
+.bg_blop1,
+.bg_blop2,
+.bg_blop3,
+.coming_soon h1::before {
+  position: absolute;
+}
+
+#logo {
+  width: 80px;
+  bottom: 30px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.bg_blop1,
+.bg_blop2,
+.bg_blop3 {
+  background-image: url("/images/blob-design-shape-with-transparent-background-png.png");
+  background-position: center;
+  background-size: 600px;
+  background-repeat: no-repeat;
+  opacity: 10%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -1;
+  transform: rotate(-5deg);
+}
+
+.bg_blop2,
+.bg_blop3 {
+  background-size: 500px;
+  opacity: 5%;
+  width: 500px;
+  height: 500px;
+}
+
+.bg_blop2 {
+  right: -350px;
+  top: -250px;
+}
+
+.bg_blop3 {
+  bottom: -300px;
+  right: -200px;
+}
+
+.socials {
+  margin-top: 80px;
+  width: 140px;
+  justify-content: space-around;
+}
+
+.socials i {
+  color: #121f38;
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.socials i:hover {
+  color: #fff;
+  background: none;
+}
+
+.coming_soon {
+  position: relative;
+}
+
+.footer {
+  justify-content: center;
+}
+
+.coming_soon h1::before {
+  content: "";
+  background: url("/images/stars-png-23.png");
+  background-position: center;
+  background-size: 100px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  right: 108px;
+  top: -30px;
+  z-index: -1;
+
+  animation-name: stretch;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+@keyframes stretch {
+  0% {
+    transform: scale(0.5);
+    border-radius: 100%;
+  }
+
+  50% {
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
