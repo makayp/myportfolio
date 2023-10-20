@@ -149,3 +149,9 @@ h3 {
     transform: scale(1.5);
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .bg_blop1 {
+    background: none;
+  }
+}
