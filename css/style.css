@@ -24,6 +24,7 @@ body {
   color: #fff;
   height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 
 main {
@@ -55,10 +56,8 @@ h3 {
   font-weight: 100;
 }
 
-.bg_blop1,
-.bg_blop2,
-.bg_blop3 {
-  background-image: url("/images/blob-design-shape-with-transparent-background-png.png");
+.bg_blop1 {
+  background-image: url("/images/blop.png");
   background-position: center;
   background-size: 600px;
   background-repeat: no-repeat;
@@ -67,25 +66,27 @@ h3 {
   height: 100%;
   display: block;
   z-index: -1;
-  transform: rotate(-5deg);
+}
+
+.bg_blop2 {
+  width: 200px;
+  height: 200px;
+  background: url("/images/design-1.png");
+  top: 0;
+}
+
+.bg_blop3 {
+  width: 250px;
+  height: 250px;
+  bottom: 0;
+  background: url("/images/design-2.png");
 }
 
 .bg_blop2,
 .bg_blop3 {
-  background-size: 500px;
-  opacity: 5%;
-  width: 500px;
-  height: 500px;
-}
-
-.bg_blop2 {
-  right: -350px;
-  top: -250px;
-}
-
-.bg_blop3 {
-  bottom: -300px;
-  right: -200px;
+  background-size: cover;
+  right: 0;
+  opacity: 8%;
 }
 
 .socials {
@@ -107,6 +108,7 @@ h3 {
 .socials i:hover {
   color: #fff;
   background: none;
+  transition: 0.3s ease;
 }
 
 .coming_soon {
