@@ -42,7 +42,7 @@ main {
 
 #logo {
   width: 80px;
-  bottom: 30px;
+  bottom: 70px;
 }
 
 h1 {
@@ -155,5 +155,10 @@ h3 {
 @media only screen and (max-width: 600px) {
   .bg_blop1 {
     background: none;
+  }
+
+  #logo {
+    position: static;
+    margin-top: 50px;
   }
 }
